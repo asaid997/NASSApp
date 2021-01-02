@@ -16,8 +16,11 @@ Server will run on port 3001
 
 Compatible with both phone and computer
 
+
 frontend - react,axios and material-ui
+
 server - express and mongoose
+
 database - mongoDB
 
 <img src="nas1.png" alt="nas1" height="450"/> <img src="nas2.png" alt="nas2" height="450"/> <img src="nas3.png" alt="nas3" height="450"/>
