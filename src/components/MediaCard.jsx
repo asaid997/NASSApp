@@ -20,7 +20,10 @@ export default function MediaCard(props) {
 
     useEffect(() => {
         setWithD(withDescription)
+
     }, [])
+
+    const isYoutubeLink = () => imageUrl.match("www.youtube.com/embed/.*")
 
     const clickHandler = () => {
         if (favHandler) {
@@ -45,7 +48,7 @@ export default function MediaCard(props) {
             <Card >
                 <CardActionArea onClick={clickHandler}>
                     <CardContent>
-                        <CardMedia height={height} component="img" image={imageUrl} />
+                        <CardMedia height={height} component={isYoutubeLink() ? "iframe" : "img"} src={imageUrl} />
                         <Typography gutterBottom variant="h6">
                             {title}
                         </Typography>
